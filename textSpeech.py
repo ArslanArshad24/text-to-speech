@@ -14,3 +14,7 @@ os.system('audio1.wav')
 #####################   mp3 Audio
 audio.save('audio2.mp3')
 os.system('audio2.mp3')
+
+########################  3rd way to save audio
+with open('hello.mp3', 'wb') as f:
+    audio.write_to_fp(f)
